@@ -1,0 +1,199 @@
+package com.kh.chap01.practice.example;
+
+import java.util.Scanner;
+
+public class ConditionPractice {
+	/*
+	 * 아이디, 비밀번호를 정해두고 로그인 기능을 작성하세요.
+	 * 로그인 성공 시 "로그인 성공"
+	 * 아이디가 틀렸을 시 "아이디가 틀렸습니다."
+	 * 비밀번호가 틀렸을 시 "비밀번호가 틀렸습니다." 출력
+	 * 
+	 * 예시
+	 * 아이디 : boram
+	 * 비밀번호 : 1234
+	 * 로그인 성공
+	 * 
+	 * 아이디 : boram
+	 * 비밀번호 : 23467
+	 * 비밀번호가 틀렸습니다.
+	 * 
+	 * 아이디 : rambo
+	 * 비밀번호 : 1234
+	 * 아이디가 틀렸습니다.
+	 * 
+	 */
+	public void practice1() {
+		/*
+		 * 메뉴를 출력하고 메뉴 번호를 누르면 "oo메뉴입니다."를,
+		 * 종료 번호를 누르면 "프로그램이 종료됩니다."를 출력하세요.
+		 */
+		Scanner sc = new Scanner(System.in);
+//		메뉴 출력
+		System.out.println("1.입력");
+		System.out.println("2.수정");
+		System.out.println("3.조회");
+		System.out.println("4.삭제");
+		System.out.println("9.종료");
+//		사용자 입력
+//		메뉴 일치여부 확인
+//		Switch에서의 break는 단순히 Switch문을 빠져나가는 역할을 함.
+//		return을 해줘야 호출한 메소드로 돌아가, 호출되기 이전인 상태가 됨.
+		while(true) {
+			System.out.print("메뉴를 입력하세요 : ");
+			int menu = sc.nextInt();
+			sc.nextLine();
+			switch(menu) {
+			case 1 : 
+				System.out.println("입력 메뉴입니다.");
+				break;
+			case 2 : 
+				System.out.println("수정 메뉴입니다.");
+				break;
+			case 3 : 
+				System.out.println("조회 메뉴입니다.");
+				break;
+			case 4 : 
+				System.out.println("삭제 메뉴입니다.");
+				break;
+			case 9 :
+				System.out.println("종료 메뉴입니다.");
+				System.out.println("프로그램을 종료합니다.");
+				return;
+			default : 
+				System.out.println("없는 메뉴입니다. 다시 입력해주세요.");
+				break;
+			}
+		}
+	}
+	public void practice2() {
+		/*
+		 * 키보드로 정수를 입력받아
+		 * 정수가 양수이면서 짝수일때만 "짝수다"를 출력
+		 * 짝수가 아니면 "홀수다"를 출력
+		 * 양수가 아니면 "양수만 입력해주세요."를 출력
+		 */
+		Scanner sc =new Scanner(System.in);
+		
+		for(;;) {
+			System.out.print("정수 입력 : ");
+			int num = sc.nextInt();
+			sc.nextLine();
+			if(num>0) { // 양수인 경우
+				if(num%2==0) { // 짝수인 경우
+					System.out.println("짝수다");
+					break;
+//					break;시 반복문을 벗어나 실행 중지됨.
+				}else { // 홀수인 경우
+					System.out.println("홀수다");
+					continue;
+//					continue;시 아래의 코드는 실행하지 않고
+//					다시 반복문으로 돌아가서 반복 실행됨.
+				}
+			}else { // 양수가 아닌 경우
+				System.out.println("양수만 입력해주세요.");
+//					return;
+			}
+			System.out.println("굳");
+//			본래 break와 continue로 인해 실행되지 않고, else로 인해서만 실행 가능
+//			그런데, 여기서 else에 return을 사용하면 Unreachable Code가 됨. 
+		}
+	}
+	public void practice3() {
+		/*
+		 * 국어, 영어, 수학 세 과목의 점수를 키보드로 입력받고
+		 * 합계와 평균을 계산하고
+		 * 합격 / 불합격을 처리하시오.
+		 * (조건 : 
+		 * 세과목의 점수가 각각 40점 이상이면서,
+		 * 평균이 60점 이상인 경우
+		 * 합격했을 경우, "축하합니다. 합격입니다!"
+		 * 불합격인 경우, "불합격입니다."
+		 *   
+		 * 
+		 */
+		Scanner sc =new Scanner(System.in);
+		for(int i=0; ;i++) {
+			System.out.print("국어점수 : ");
+			int korean = sc.nextInt();
+			sc.nextLine();
+			System.out.print("수학점수 : ");
+			int math = sc.nextInt();
+			sc.nextLine();
+			System.out.print("영어점수 : ");
+			int english = sc.nextInt();
+			sc.nextLine();
+			int sum = korean+math+english;
+			double avg = (korean+math+english)/3;
+				if( (korean>=40 && math>=40&& english>=40)
+						&&( sum/3 )>=60){
+					System.out.println("합계 : "+sum);
+					System.out.println("평균 : "+avg);
+					System.out.println("축하합니다. 합격입니다.\n");
+					
+				}else {
+					System.out.println("불합격입니다.\n");
+				}
+		}
+	}
+	public void practice4() {
+		/*
+		 * 수업 자료에서 if문으로 되어있는 봄, 여름, 가을, 겨울을 switch문으로 출력하시오.
+		 */
+		Scanner sc = new Scanner(System.in);
+		System.out.print("1~12사이의 정수 입력 : ");
+		int month = sc.nextInt();
+		sc.nextLine();
+		switch(month) {
+		case 3 : 
+		case 4 :
+		case 5 :
+			System.out.printf("%d은 봄입니다.",month);
+			break;
+		case 6 : 
+		case 7 :
+		case 8 :
+			System.out.printf("%d은 봄입니다.",month);
+			break;
+		case 9 : 
+		case 10 :
+		case 11 :
+			System.out.printf("%d은 봄입니다.",month);
+			break;
+		case 12 : 
+		case 1 :
+		case 2 :
+			System.out.printf("%d은 봄입니다.",month);
+			break;
+		default : 
+			System.out.println("잘못 입력하였습니다. 다시 입력해주세요.");
+		}
+	}
+	
+	
+	public void practice5() {
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.print("아이디 : ");
+			String id = sc.nextLine();
+			System.out.print("비밀번호 : ");
+			int pwd = sc.nextInt();
+			sc.nextLine();
+				if(id.equals("boram")) { // 아이디가 맞을 경우
+					if(pwd == 1234) { // 아이디가 맞고, 비밀번호가 맞음
+						System.out.println("로그인 성공");
+						System.out.println();
+						break;
+					}else { //아이디가 맞고, 비밀번호가 틀림
+						System.out.println("비밀번호가 틀렸습니다.");
+						System.out.println();
+						continue;
+					}
+				}else { // 아이디가 틀린 경우
+					System.out.println("아이디가 틀렸습니다.");
+					System.out.println();
+					continue;
+				}
+		}
+	}
+}

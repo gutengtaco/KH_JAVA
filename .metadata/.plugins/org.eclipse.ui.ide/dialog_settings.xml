@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\01_Java-workspace\15_ObjectArray"/>
+			<item value="C:\Users\thfma\Desktop\01_Java-workspace (3)\15_ObjectArray"/>
+			<item value="C:\01_Java-workspace\06_Object"/>
+			<item value="C:\01_Java-workspace\05_Array_Homework"/>
+			<item value="C:\01_Java-workspace"/>
+			<item value="C:\01_Java-workspace\Test"/>
+			<item value="C:\01_Java-workspace\04_Control"/>
+			<item value="C:\01_Java-workspace\03_Operator"/>
+			<item value="C:\01_Java-workspace\02_Variable"/>
+			<item value="C:\01_Java-workspace\01_MyFirstProject"/>
+			<item value="C:\01_Java-workspace\01_JavaExam"/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1645019382071"/>
+	</section>
+</section>

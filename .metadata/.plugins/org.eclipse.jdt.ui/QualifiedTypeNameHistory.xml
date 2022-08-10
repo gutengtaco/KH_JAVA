@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.kh.chap03.branch.B_Continue"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.kh.chap02_encapsulation.model.vo.Student"/>
+<fullyQualifiedTypeName name="com.kh.chap03_class.model.vo.Book"/>
+<fullyQualifiedTypeName name="com.kh.chap04_field.model.vo.FieldTest3"/>
+<fullyQualifiedTypeName name="com.kh.example.model.vo.Student"/>
+<fullyQualifiedTypeName name="com.kh.chap06_method.controller.MethodTest2"/>
+<fullyQualifiedTypeName name="com.kh.chap01_oneVsmany.model.vo.Book"/>
+<fullyQualifiedTypeName name="com.hw2.model.vo.Book"/>
+<fullyQualifiedTypeName name="com.hw3.model.vo.Product"/>
+<fullyQualifiedTypeName name="com.hw3.controller.ProductController"/>
+<fullyQualifiedTypeName name="com.kh.chap01_beforeVSafter.before.model.vo.Desktop"/>
+<fullyQualifiedTypeName name="com.kh.chap01_beforeVSafter.after.model.vo.Desktop"/>
+<fullyQualifiedTypeName name="com.kh.chap01_beforeVSafter.after.model.vo.SmartPhone"/>
+<fullyQualifiedTypeName name="com.kh.chap01_beforeVSafter.after.model.vo.Tv"/>
+<fullyQualifiedTypeName name="com.kh.chap03_override.model.vo.Book"/>
+<fullyQualifiedTypeName name="com.kh.chap01_poly.part02_electronic.model.vo.Desktop"/>
+<fullyQualifiedTypeName name="java.lang.EnumConstantNotPresentException"/>
+<fullyQualifiedTypeName name="com.kh.chap02_abstractAndInterface.part02_family.model.vo.Baby"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.io.EOFException"/>
+<fullyQualifiedTypeName name="com.hw4.model.vo.Employee"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.kh.chap01_list.part02_mvc.model.vo.Music"/>
+<fullyQualifiedTypeName name="com.kh.chap02_set.part01_hashSet.model.vo.Student"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.kh.practice.chap01_poly.model.vo.Member"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.PUBLIC_MEMBER"/>
+<fullyQualifiedTypeName name="com.kh.practice.chap01_poly.model.vo.Book"/>
+<fullyQualifiedTypeName name="com.kh.practice.chap01_poly.view.LibraryMenu"/>
+<fullyQualifiedTypeName name="java.net.InetAddress"/>
+</qualifiedTypeNameHistroy>
